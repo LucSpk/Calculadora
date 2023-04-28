@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="box">
+        <div class="box-inside">
+            <div class="lcd-box">
+                <p class="lcd-auxiliar lcd">{{lcdSecundario}}</p>
+                <label class="igual-lcd">=</label>
+                <p class="lcd-principal lcd">{{lcdPrincipal}}</p>
+            </div>
+            <div class="keywork-box">
+                <div class="botoes">
+                    <button mat-button class="botao ce" (click)="ceClick()"><div class="botao-interno">CE</div></button>
+                    <button mat-button class="botao c" (click)="cClick()"><div class="botao-interno">C</div></button>
+                    <button mat-button class="botao" (click)="calcPercem()"><div class="botao-interno">%</div></button>
+                    <button mat-button class="botao col-right" (click)="opClick('div')"><div class="botao-interno">/</div></button>
+
+                    <button mat-button class="botao" (click)="nrClick(7)"><div class="botao-interno">7</div></button>
+                    <button mat-button class="botao" (click)="nrClick(8)"><div class="botao-interno">8</div></button>
+                    <button mat-button class="botao" (click)="nrClick(9)"><div class="botao-interno">9</div></button>
+                    <button mat-button class="botao col-right" (click)="opClick('mut')"><div class="botao-interno">X</div></button>
+
+                    <button mat-button class="botao" (click)="nrClick(4)"><div class="botao-interno">4</div></button>
+                    <button mat-button class="botao" (click)="nrClick(5)"><div class="botao-interno">5</div></button>
+                    <button mat-button class="botao" (click)="nrClick(6)"><div class="botao-interno">6</div></button>
+                    <button mat-button class="botao col-right" (click)="opClick('sub')"><div class="botao-interno">-</div></button>
+
+                    <button mat-button class="botao" (click)="nrClick(1)"><div class="botao-interno">1</div></button>
+                    <button mat-button class="botao" (click)="nrClick(2)"><div class="botao-interno">2</div></button>
+                    <button mat-button class="botao" (click)="nrClick(3)"><div class="botao-interno">3</div></button>
+                    <button mat-button class="botao col-right" (click)="opClick('sum')"><div class="botao-interno">+</div></button>
+
+                    <button mat-button class="botao" (click)="mudaSinal()"><div class="botao-interno">+/-</div></button>
+                    <button mat-button class="botao" (click)="nrClick(0)"><div class="botao-interno">0</div></button>
+                    <button mat-button class="botao" (click)="pontoClicl()"><div class="botao-interno">.</div></button>
+                    <button mat-button class="botao igual" (click)="igClick()"><div class="botao-interno">=</div></button>
+
+                </div>
+            </div>           
+        </div>
+        <div class="box-outside">
+            <div class="base">
+                <div class="base-container">
+                    <div class="base-box">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
